@@ -1,2 +1,6 @@
-# volta-ao-mundo
-Trabalho "volta ao mundo" da matéria de Desenvolvimento Web 3, onde devemos fazer um site sobre um país que nos foi sorteado.
+# Volta ao Mundo
+
+
+Projeto da aula de Desenvolvimento Web 3, onde devemos desenvolver um site sobre um país sorteado.
+No caso, o projeto será sobre Marrocos.
+
