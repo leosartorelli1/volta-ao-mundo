@@ -2,5 +2,6 @@
 
 
 Projeto da aula de Desenvolvimento Web 3, onde devemos desenvolver um site sobre um país sorteado.
-No caso, o projeto será sobre Marrocos.
+
+O projeto será feito sobre Marrocos, onde irá abrangir todos os seus fatos curiosos, história, comidas tipicas, ponto turisticos, dentre outros.
 
