@@ -1,3 +1,9 @@
+html, body {
+    height: 100%; /* Garante que o body ocupe 100% da altura da janela */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 }
 
 header {
-    background-color: #630d0d;
+    background-color: #a01616;
     color: white;
     padding: 10px 20px; /* Ajuste a altura do header */
 }
@@ -13,30 +19,33 @@ header {
 .header-content {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
-    justify-content: space-between; /* Espaço entre bandeira e texto */
+    justify-content: flex-start; /* Alinha à esquerda */
 }
 
 header img {
     border: 3px solid black;
     width: 350px;
     height: 200px; /* Ajuste o tamanho da bandeira se necessário */
-    margin-left: 300px;
+    margin-right: 50px; /* Espaço entre a bandeira e o texto */
+    margin-left: 350px;
 }
 
 header h1 {
-    margin-left: 20px; /* Espaço entre a bandeira e o título */
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin: 0; /* Remova a margem esquerda */
 }
 
 header p {
-    font-weight: 100;
+    font-weight: 100;   
 }
 
 nav {
-    background-color: #149429;
-    height: 40px;
+    background-color: #000000;
+    height: 60px; /* Altura fixa para o nav */
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
     justify-content: center;
+    font-size: 18px;
 }
 
 nav ul {
@@ -50,9 +59,10 @@ nav ul li {
 }
 
 nav ul li a {
- 
     text-decoration: none;
     color: white; 
+    padding: 0 10px; /* Espaço interno para links */
+    line-height: 60px; /* Alinha verticalmente o texto */
 }
 
 nav ul li a:hover {
@@ -60,11 +70,38 @@ nav ul li a:hover {
 }
 
 section {
-    flex: 1; /* Faz com que a seção principal ocupe o espaço restante */
+    display: flex;
+    flex-direction: column; /* Mantenha isso para o texto */
+    align-items: center; /* Centraliza horizontalmente o texto e as imagens */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px; /* Espaçamento externo se necessário */
+    flex: 1; /* Faz com que a seção ocupe o espaço restante */
+    font-size: 20px;
+}
+
+section h1, section p {
+    max-width: 1000px; /* Ajuste conforme necessário */
+    width: 100%; /* Para garantir que ele não ultrapasse a largura máxima */
+    margin: 0 10px; /* Margem lateral para espaçamento */
+}
+
+section .image-container {
+    display: grid; /* Utiliza grid layout */
+    grid-template-columns: repeat(2, 550px); /* Define duas colunas de 550px cada */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza o grid no contêiner */
+    margin-top: 20px; /* Espaçamento acima das imagens */
+}
+
+section img {
+    width: 550px; /* Largura fixa para cada imagem */
+    height: 375px; 
+    border: 3px solid black;
 }
 
 footer {
-    background-color: #630d0d; /* Cor de fundo do footer */
+    background-color: #0d6334; /* Cor de fundo do footer */
     color: white; /* Cor do texto do footer */
     text-align: center; /* Centraliza o texto no footer */
+    padding: 10px;
 }
