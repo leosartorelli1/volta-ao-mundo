@@ -105,3 +105,16 @@ footer {
     text-align: center; /* Centraliza o texto no footer */
     padding: 10px;
 }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
